@@ -1,0 +1,86 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Header style */
+.header {
+	display: flex;
+    padding: 10px;
+    background: #3B3B61;
+    color: #ffff;
+}
+.header h2 {
+	margin-left: 10px;
+}
+
+/* Form Container */
+.container {
+	margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container form input {
+	width: 500px;
+    height: 30px;
+    padding: 5px;
+}
+.container form select {
+	width: 100px;
+    height: 43px;
+    padding: 5px;
+}
+.form--submit {
+	margin-left: 10px;
+    width: 100px;
+    height: 44px;
+    padding: 7px
+}
+
+/* Error Msg */
+.msg {
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.card--container {
+    display: flex;
+    justify-content: center;
+}
+.city--data {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.child--container {
+    display: flex;
+    justify-content: center;
+}
+.child--item {
+    margin: 15px;
+    list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        margin: 20px;
+        display: block;
+    }
+    .container form input {
+        width: 250px;
+        height: 30px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .child--container {
+        display: flex;
+        flex-direction: column;
+    }
+    .child--item {
+        margin: 0 auto;
+    }
+}
+

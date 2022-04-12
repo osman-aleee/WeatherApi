@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather Forcast</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+	<!-- Header Section -->
+	<header class="header">
+		<h2>Weather Forcast (5 days)</h2>
+	</header>
+
+	<!-- Form Section -->
+	<div class="container">
+		<form>
+			<select>
+				<option selected> Search By</option>
+				<option value="city-name">City Name</option>
+				<option value="city-id">City Id</option>
+				<option value="city-zip">City Zip</option>
+			</select>
+			<input type="text" name="search-term" placeholder="Search Term" value="" />
+		</form>
+		<button type="submit" class="form--submit" id="form-submit">
+				<svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 35 35" width="30px" height="30px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/></svg>
+		</button>
+	</div>
+
+	<!-- Error Msg -->
+	<span class="msg"></span>
+
+	<!-- Main card -->
+	<div class="card--container">
+		<ul class="city"></ul>
+	</div>
+	<!-- Child cards -->
+	<div class="child--container">
+		<ul class="child--items">
+			
+		</ul>
+	</div>
+	<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
